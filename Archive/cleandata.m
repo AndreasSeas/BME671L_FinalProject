@@ -15,12 +15,14 @@ raw=edfread("PN00-1.edf");
 cd(prgdir)
 
 %% process
-
 [numtimes,numelem]=size(raw);
 fs=numel(raw{1,1}{1});
 t=[0:1/fs:numtimes(end)-1/fs]';
 vars=raw.Properties.VariableNames';
 rawmat=cell2mat(raw{:,:});
+
+
+
 
 %% plot
 f=figure; hold on;
