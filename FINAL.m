@@ -16,6 +16,7 @@ dir_out=cd;
 cd(dir_home);
 
 %% load in the dataset of interest
+% https://physionet.org/content/siena-scalp-eeg/1.0.0/
 ptsznum=1; % this patient had several seizures recorded, we want the first
 edfname="PN00-1.edf";% name of the .edf file
 txtname="Seizures-list-PN00.txt";% name of timing/info file
